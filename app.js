@@ -1,4 +1,4 @@
-const clock = document.querySelector('.clock')
+const clock = document.querySelector('.clockEl')
 
 const tick = () =>{
     const now = new Date();
@@ -7,12 +7,12 @@ const tick = () =>{
     const s = now.getSeconds();
 
     const html = `
-        <span>${h}:</span>
-        <span>${m}:</span>
+        <span>${h}:</span> 
+        <span>${m}:</span> 
         <span>${s}</span>
 
     `;
-    clock.innerHTML = html;
+    clock.innerHTML=html;
     
 }
 
